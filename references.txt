@@ -1,0 +1,61 @@
+app1 - Creating and using app in django and url configuration
+app1_1 - Default url, creating links between urls
+app2_1 - Rendering HTML templates
+app3_1 - Loading Static Contents - image, css, javascript
+app4_1 - Sending values to views from URL and Web Form [Dynamic Contents]
+app5_1 - DJango Templating Language
+
+app6_1 - Manual CRUD Application
+MySQL Connection String
+    'mysql':{
+        'ENGINE': 'django.db.backends.mysql',
+        'HOST': "localhost",
+        'PORT': "3306",
+        'NAME': "python0",
+        'USER': "admin",
+        'PASSWORD': "admin@123",
+        'OPTIONS': {
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
+        }
+    }
+
+app7_1 - Model and Database CRUD
+app8_1 - Model and CRUD using Model
+
+app9_1 - Form and CRUD
+app9_2 - ModelForm
+app9_3 - ModelForm and CRUD
+app9_4 - Crispy-Forms
+         pip install django-crispy-forms
+         'crispy_forms'
+app10_1 - GericViews and CRUD
+app11_1 - Django User Authentication
+app12_1 - Create and Check Session Varaibles
+app12_2 - Create and Display Cookies
+
+app13_1 - Generating Non-HTML Content
+STATIC_ROOT = 'staticfiles'
+STATIC_URL = '/static/'
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
+
+app14_1 - File Uploader
+# File Uploading
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media').replace('\\', '/')
+MEDIA_URL = '/media/'
+
+app15_1 - Email Sender
+# Sending Email
+EMAIL_BACKEND ='django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'abc@gmail.com'
+EMAIL_HOST_PASSWORD = 'abc'
+
+# Enable Less Secure APP Access
+# https://myaccount.google.com/lesssecureapps?pli=1&rapt=AEjHL4M535fb_nshBUjkH6yX3n-qZPvXkNodo8y2GeM7DkKXY1CgK4HCZLLZBPqGZ1EhCOZZzcmWFsrjxBdAFW1cH7tYA6rbKQ
+
+app16_1 - API (Application Programming Interface)
+app16_2 - API Call from Web App

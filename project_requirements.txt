@@ -1,0 +1,25 @@
+------------------------------------------
+Projects
+------------------------------------------
+1. Blogging [Step-5]
+2. Website with CMS [Step-6]
+------------------------------------------
+3. E-Commerce (Shopping Site) [Step-7]
+------------------------------------------
+Technology
+- UI/UX (HTML, CSS, JavaScript, Bootstrap, JS (Node, Angular | React | View) [Step-2]
+- Python as Server Side Language (Django) [Step-3]
+- Database Mysql, SQlite, other [Step-4]
+
+Core Concepts [Step-1]
+- App1
+- App16
+------------------------------------------
+Core Python [0]
+Stastics (Math) [1]
+Data Science [2]
+Machine Learning [3]
+------------------------------------------
+Internet of Things (IOT) [Data Gathering]
+Deep Learning [AI]
+------------------------------------------

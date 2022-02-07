@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p><a href="person/">Add Person</a></p>
+<h3>All Persons</h3>
+<ul>
+    {% for person in object_list %}
+        <li>{{ person }}  | <a href="person/details/{{ person.id }}">Details</a> | <a href="person/update/{{ person.id }}">Edit</a> | | <a href="person/delete/{{ person.id }}">Delete</a></li>
+    {% endfor %}
+</ul>
+</body>
+</html>

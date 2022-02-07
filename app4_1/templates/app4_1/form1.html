@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Form-1</h1>
+<form action="get_values1" method="GET">
+    <p>ID : <input type="text" name="id"></p>
+    <p>NAME : <input type="text" name="name"></p>
+    <p><input type="submit"></p>
+</form>
+<hr/>
+<h1>Form-2</h1>
+<form action="get_values2" method="POST">
+    {% csrf_token %}
+    <p>ID : <input type="text" name="id"></p>
+    <p>NAME : <input type="text" name="name"></p>
+    <p><input type="submit"></p>
+</form>
+</body>
+</html>

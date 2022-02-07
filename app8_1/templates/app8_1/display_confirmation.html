@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Delete Confirmation!</title>
+</head>
+<body>
+    <form action="delete/" method="post">
+        {% csrf_token %}
+        <input type="hidden" name="txt_id" value="{{ pid }}">
+        <input type="submit" value="YES">
+    </form>
+</body>
+</html>

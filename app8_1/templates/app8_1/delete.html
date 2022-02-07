@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Person Edit Entry Form</title>
+</head>
+<body>
+    <h3>Person Delete Form</h3>
+    <form action="display_delete_confirm" method="post">
+        {% csrf_token %}
+        <input type="hidden" name="txt_id" value="{{ person.pid }}">
+        ID : <input type="text" name="id" value="{{ person.pid }}" disabled><br/>
+        NAME : <input type="text" name="txt_name" value="{{ person.full_name }}" disabled><br/>
+        ADDRESS : <input type="text" name="txt_address" value="{{ person.contact_address }}" disabled><br/>
+        <input type="submit" value="DELETE">
+    </form>
+</body>
+</html>

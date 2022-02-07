@@ -1,0 +1,10 @@
+{% extends 'app14_1/create.html' %}
+{% block replace %}
+<div class="jumbotron">
+  <h3 class="display-4">Welcome {{ user_pr.fullname }}</h3>
+  <hr class="my-4">
+  <img src="{{ user_pr.picture.url }}" class="image_responsive" height="100px" width="100px">
+  <p> <a href="{{ user_pr.picture.url }}">Image Path</a> </p>
+</div>
+    <h4><a href="./">Home</a></h4>
+{% endblock %}

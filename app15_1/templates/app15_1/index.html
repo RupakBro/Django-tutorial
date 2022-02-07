@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Emails</title>
+</head>
+<body>
+<h3>All Emails</h3>
+<p><a href="compose/">New Email</a></p>
+<table border="2">
+    <thead><td>ID</td><td>TO</td><td>SUBJECT</td><td>EMAIL</td></thead>
+    <tbody>
+        {% for email in emails %}
+            <tr><td>{{ email.id }}</td><td>{{ email.to }} </td><td> {{ email.subject }}</td><td>{{ email.content }}</td></tr>
+        {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>

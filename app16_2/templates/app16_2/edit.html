@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Record</title>
+</head>
+<body>
+    <h3>Edit Record</h3>
+    <form method="post">
+        {% csrf_token %}
+        <input type="hidden" name="txt_id" value="{{ contact.id }}">
+        <p>NAME : <input type="text" name="txt_name" value="{{ contact.fullname }}"></p>
+        <p>ADDRESS : <input type="text" name="txt_address" value="{{ contact.address }}"></p>
+        <p><input type="submit" value="UPDATE"></p>
+    </form>
+</body>
+</html>
